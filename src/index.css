@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #5b6477;
+  background: #f5f8fc;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f5f8fc;
+}
+
+.app-frame {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.hero-banner {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.hero-tag {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8e97ab;
+}
+
+.hero-banner h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #6c758c;
+}
+
+.hero-copy {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  color: #8c94a8;
+}
+
+.status-box {
+  max-width: 700px;
+  margin: 0 auto 18px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-success {
+  color: #2b8a6e;
+  background: #e8fbf3;
+  border: 1px solid #b9eed9;
+}
+
+.status-error {
+  color: #b54848;
+  background: #fff0f0;
+  border: 1px solid #f3c2c2;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel {
+  border-radius: 18px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 10px 24px rgba(137, 148, 173, 0.12);
+}
+
+.form-panel {
+  background: #f3e2e8;
+}
+
+.list-panel {
+  background: #e8effb;
+}
+
+.section-heading {
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #555f73;
+}
+
+.section-kicker {
+  margin: 0 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #8b92a5;
+}
+
+.agenda-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 14px;
+  align-items: end;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-block label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7a8295;
+}
+
+.input-block input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 13px;
+  font-size: 0.92rem;
+  background: #fbfbfc;
+  color: #5b6477;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #e4e7ef;
+}
+
+.input-block input:focus {
+  box-shadow: inset 0 0 0 2px #b6c4ef;
+}
+
+.inline-message {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #6d7487;
+}
+
+.error-text {
+  color: #bf5d5d;
+  font-weight: 700;
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.primary-action,
+.secondary-action {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-action {
+  background: #57bea1;
+  color: white;
+}
+
+.primary-action:hover {
+  filter: brightness(0.97);
+}
+
+.secondary-action {
+  background: #f8fbff;
+  color: #7c88b2;
+  box-shadow: inset 0 0 0 2px #b7c8f1;
+}
+
+.secondary-action:hover {
+  background: #f0f5ff;
+}
+
+.primary-action:disabled,
+.secondary-action:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-footer {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(150, 155, 170, 0.18);
+  font-size: 0.9rem;
+  color: #58a691;
+  font-weight: 700;
+}
+
+.list-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.contact-total {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #c7b9ff;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.contact-collection {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.contact-table thead th {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: #6a7387;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.contact-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.contact-table tbody tr:nth-child(even) {
+  background: rgba(243, 226, 232, 0.4);
+}
+
+.contact-table td {
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  color: #4f586c;
+}
+
+@media (max-width: 820px) {
+  .hero-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .agenda-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .list-topbar {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
